@@ -4,7 +4,7 @@ import winsound
 frequency = 500 # In Hertz, according to the official morse code frequency
 dotLength = 60 # milliseconds or 1 second according to official morse code
 dashLength = dotLength * 3 # or 3 seconds according official morse code
-pauseWords = dotLength * 7
+pauseWords = dotLength * 3
 
 # Dictionary representing the morse code chart
 # Got from GeeksForGeeks
@@ -57,4 +57,4 @@ class MorseCodeWord:
             else:
                 time.sleep(1)
 
-        time.sleep(3)
+        time.sleep(pauseWords)
